@@ -2,7 +2,6 @@ import sys; sys.path.append('.')
 
 import torch
 from torch import nn
-
 from src.parameters import Parameters
 
 class Module(nn.Module, Parameters):

@@ -15,10 +15,10 @@ def main():
     quotes = [q for q in quotes if len(q)>0]
     # df = pd.read_csv("data/AnimeQuotes.csv", usecols=["Quote"])
 
-    name = "tokenizer"
-    # name = "byte-pair-tokenizer"
-    # tokenizer = BytePairTokenizer(
-    tokenizer = Tokenizer(
+    # name = "tokenizer"
+    # tokenizer = Tokenizer(
+    name = "byte-pair-tokenizer"
+    tokenizer = BytePairTokenizer(
         name=name,
         max_tokens=MAX_TOKENS,
         min_freq=2
